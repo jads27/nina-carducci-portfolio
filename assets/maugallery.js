@@ -14,7 +14,7 @@
       $.fn.mauGallery.listeners(options);
 
       $(this)
-        .children(".gallery-item")
+        .children("picture")
         .each(function(index) {
           $.fn.mauGallery.methods.responsiveImageItem($(this));
           $.fn.mauGallery.methods.moveItemInRowWrapper($(this));
@@ -130,18 +130,18 @@
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
-          if ($(this).children("img").length) {
-            imagesCollection.push($(this).children("img"));
+          if ($(this).find("picture img").length) {
+            imagesCollection.push($(this).find("picture img"));
           }
         });
       } else {
         $(".item-column").each(function() {
           if (
             $(this)
-              .children("img")
+              .find("picture")
               .data("gallery-tag") === activeTag
           ) {
-            imagesCollection.push($(this).children("img"));
+            imagesCollection.push($(this).find("picture img"));
           }
         });
       }
@@ -169,18 +169,18 @@
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
-          if ($(this).children("img").length) {
-            imagesCollection.push($(this).children("img"));
+          if ($(this).find("picture img").length) {
+            imagesCollection.push($(this).find("picture img"));
           }
         });
       } else {
         $(".item-column").each(function() {
           if (
             $(this)
-              .children("img")
+              .find("picture")
               .data("gallery-tag") === activeTag
           ) {
-            imagesCollection.push($(this).children("img"));
+            imagesCollection.push($(this).find("picture img"));
           }
         });
       }
@@ -196,9 +196,7 @@
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
-      gallery.append(`<div class="modal fade" id="${
-        lightboxId ? lightboxId : "galleryLightbox"
-      }" tabindex="-1" role="dialog" aria-hidden="true">
+      gallery.append(`<div class="modal fade" id="${lightboxId ? lightboxId : "galleryLightbox"}" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -244,7 +242,7 @@
 
       var tag = $(this).data("images-toggle");
 
-      $(".gallery-item").each(function() {
+      $("picture").each(function() {
         $(this)
           .parents(".item-column")
           .hide();
