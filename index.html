@@ -7,6 +7,22 @@
             name="description"
             content="Photographe à Bordeaux capturant vos moments précieux. Shooting, retouches et albums personnalisés. Contactez-moi au 05 56 67 78 89, du lundi au vendredi, de 10h à 19h."
         />
+        <meta property="og:title" content="Nina Carducci - Photographe" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:description"
+            content="Photographe à Bordeaux capturant vos moments précieux. Shooting, retouches et albums personnalisés. Contactez-moi au 05 56 67 78 89, du lundi au vendredi, de 10h à 19h."
+        />
+        <meta property="og:image" content="./assets/images/nina.webp" />
+        <meta property="og:site_name" content="Nina Carducci" />
+        <meta property="og:url" content="https://jads27.github.io/nina-carducci-portfolio/" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Nina Carducci - Photographe" />
+        <meta
+            name="twitter:description"
+            content="Photographe à Bordeaux capturant vos moments précieux. Shooting, retouches et albums personnalisés. Contactez-moi au 05 56 67 78 89, du lundi au vendredi, de 10h à 19h."
+        />
+        <meta name="language" content="fr" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +35,7 @@
         />
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
-    <body>
+    <body itemscope itemtype="https://schema.org/LocalBusiness">
         <header>
             <div class="panel">
                 <h2 class="name">Nina Carducci</h2>
@@ -30,7 +46,7 @@
                         <li><a href="#services">Service</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li>
-                            <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+                            <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener noreferrer">
                                 <img src="./assets/images/instagram.webp" width="20" height="20" alt="Logo Instagram" />
                             </a>
                         </li>
@@ -363,6 +379,55 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+                <img src="./assets/images/instagram.webp" width="20" height="20" alt="Instagram" />
+            </a>
+            <hr />
+            <div class="lists-wrapper">
+                <div class="contact">
+                    <h5>Coordonnées</h5>
+                    <ul>
+                        <li><span itemprop="name">Nina Carducci - Photographe</span></li>
+                        <li>
+                            <div class="no-line-height" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">68 avenue Alsace-Lorraine,</span><br />
+                                <span itemprop="addressLocality">Bordeaux</span>
+                                <span itemprop="postalCode">33200</span>
+                            </div>
+                        </li>
+                        <li itemprop="openingHours" content="Mo-Fr 10:00-19:00">Lundi - Vendredi : 10:00 - 19:00</li>
+                        <li><span itemprop="telephone">05 56 67 78 89</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="#about">À propos de moi</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#services">Mes services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": ["LocalBusiness", "Service"],
+                "name": "Nina Carducci",
+                "description": "Photographe à Bordeaux capturant vos moments précieux. Shooting, retouches et albums personnalisés. Contactez-moi au 05 56 67 78 89, du lundi au vendredi, de 10h à 19h.",
+                "image": "./assets/images/nina.webp",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Bordeaux",
+                    "postalCode": "33200",
+                    "streetAddress": "68 avenue Alsace-Lorraine"
+                },
+                "telephone": "05 56 67 78 89",
+                "priceRange": "à partir de 50€",
+                "openingHours": "Mo-Fr 10:00-19:00"
+            }
+        </script>
         <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="./assets/maugallery.js"></script>

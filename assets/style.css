@@ -247,6 +247,58 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+footer {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	text-align: center;
+	position: relative;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+footer .social-link {
+	display: inline-block;
+	padding: 10px; /* Ajouter de l'espace autour du logo */
+	background-color: transparent; /* Fond transparent */
+	border-radius: 50%; /* Créer un cercle en utilisant un rayon de 50% */
+	border: 1px solid #000; /* Bordure solide noire de 2 pixels */
+}
+footer .social-link img {
+	display: block; /* Permet de centrer correctement l'image */
+	max-width: 100%; /* Assure que l'image ne dépasse pas la taille du conteneur */
+	
+}
+footer hr {
+	width: 23%;
+	margin: 25px auto;
+	margin-top: 15px;
+}
+footer .lists-wrapper {
+	text-align: start;
+	display: flex;
+	justify-content: center;
+	gap: 10%;
+}
+footer ul {
+	list-style-type: none;
+	line-height: 2.3em;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	margin-top: 15px;
+	opacity: 0.9;
+}
+footer ul .no-line-height {
+	line-height: normal;
+}
+footer ul a {
+	text-decoration: none;
+	color: inherit;
+}
+footer ul a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -355,5 +407,12 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-}
 
+	footer .lists-wrapper {
+		display: block;
+		text-align: center;
+	}
+	footer .lists-wrapper .contact {
+		margin-bottom: 40px;
+	}
+}
