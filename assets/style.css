@@ -278,7 +278,7 @@ footer .social-link img {
 }
 footer hr {
 	width: 23%;
-	margin: 25px auto;
+	margin: 30px auto;
 	margin-top: 15px;
 }
 footer .lists-wrapper {
@@ -292,8 +292,7 @@ footer h3 {
 }
 footer ul {
 	list-style-type: none;
-	line-height: 2.3em;
-	font-size: 16px;
+	line-height: 2em;
 	padding: 0;
 	margin: 0;
 	margin-top: 15px;
